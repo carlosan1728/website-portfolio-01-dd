@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import portraitImage from './Assets/carlo.png'
 
 const services = [
   { number: '01', title: 'AI & Automations', text: 'Remove the bottlenecks between your ambition and your output. Build systems that run while you sleep.' },
@@ -47,14 +48,11 @@ export default function Page() {
             <a className="text-link" href="#services">Explore services <span>↓</span></a>
           </div>
         </div>
-        <div className="hero-art" aria-label="Abstract system dashboard illustration" role="img">
-          <div className="art-orbit orbit-one" />
-          <div className="art-orbit orbit-two" />
-          <div className="art-core"><span>CS</span><small>OPERATIONS<br />SYSTEM</small></div>
-          <div className="art-label label-one">01 / GROWTH</div>
-          <div className="art-label label-two">02 / SYSTEMS</div>
-          <div className="art-label label-three">03 / CLARITY</div>
-          <div className="art-line line-one" /><div className="art-line line-two" /><div className="art-line line-three" />
+        <div className="hero-art" aria-label="Portrait of Carlo Sanchez Jr." role="img">
+          <div className="portrait-panel" />
+          <div className="portrait-rule" />
+          <img className="portrait-image" src={portraitImage.src} alt="Carlo Sanchez Jr." />
+          <div className="portrait-caption"><span>Carlo Sanchez Jr.</span><small>OPERATIONS &amp; GROWTH</small></div>
         </div>
         <div className="hero-scroll">Scroll to explore <span>↓</span></div>
       </section>
